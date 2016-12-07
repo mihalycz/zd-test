@@ -1,5 +1,8 @@
-get the sources then run in the root folder of the project
+Get the sources, then run in the root folder of the project:
+
+```sh
 npm i
 grunt
+```
 
-to see demo page please open test/index.html
+To see demo page please open **test/index.html**
