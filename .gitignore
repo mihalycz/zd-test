@@ -48,4 +48,5 @@ crashlytics.properties
 crashlytics-build.properties
 
 dist
+build
 node_modules

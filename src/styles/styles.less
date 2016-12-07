@@ -1,0 +1,72 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgba(42, 77, 110, 0.4);
+}
+
+form {
+    background-color: white;
+    line-height: 100px;
+    border: solid 1px #728CA6;
+    max-width: 640px;
+    margin: 50px auto;
+
+    input[type=text] {
+        border: solid 1px rgba(42, 77, 110, 0.4);
+        vertical-align: middle;
+        width: 500px;
+        height: 40px;
+        font-size: 26px;
+        margin-left: 20px;
+        padding-left: 5px;
+    }
+
+    input[type=text]:focus {
+        border: solid 1px #728CA6;
+        outline: none;
+    }
+
+    span {
+        border: solid 1px #728CA6;
+        font-size: 26px;
+        text-align: center;
+        width: 40px;
+        line-height: 40px;
+        float: right;
+        margin: 30px 20px;
+        text-transform: uppercase;
+    }
+}
+
+@media (max-width: 650px) {
+    form {
+        width: 90%;
+        margin: 10px auto;
+        text-align: center;
+        position: relative;
+
+        input[type=text] {
+            width: 90%;
+            margin-left: 0;
+        }
+
+        span {
+            display: block;
+            position: absolute;
+            left: 20px;
+            top: 73px;
+            text-align: left;
+            border: none;
+            margin: 0;
+            font-size: 12px;
+            text-transform: none;
+            line-height: 20px;
+            width: 90%;
+            color: #72AB97;
+        }
+
+        span:before {
+            content: "selected group is: ";
+        }
+    }
+}
